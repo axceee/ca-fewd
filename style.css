@@ -1,132 +1,224 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 body{
-    background-image: url("background\ picture.png");
-    
-    background-size: cover;
-    overflow-y: hidden;
+    margin: 0px;
+    padding: 0;
+    object-fit: fill;
+    width: fit-content;
     overflow-x: hidden;
+    font-family: 'Cabin', sans-serif;
     
-
-
-}
-img{
-    z-index: 10;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-
-.nav-div>a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-.nav-div{
-    z-index: 1;
-    display: flex;
-    position: re;
-
-    justify-content: space-between;
-    background-color: rgba(0,0,0,0.7);
-    top: 0  ;
-    padding-bottom: 100px;
     
 }
-.nav-div .div{
-    display: flex;
-    justify-content: space-between ;
+/* Header */
+header{
+    background-color: #121921;
+    margin: 0;
+    
+}
+#amazon{
+    width: 300px;
+    position: relative;
+    top: 5px;
+}
+#search{
+    width: 600px;
+    height: 30px;
+    position: relative;
+    bottom: 15px;
+    border-radius: 5px;
+    margin-left: 50px;
+    text-indent: 10px;
+    border: none;
+    
+}
+#button{
+    background-color: #FBBE67;
+    position: relative;
+    bottom: 9px;
+    right: 40px;
+    height: 32px;
+    width: 38px;
+    border-radius: 5px;
+    border: none;
+    
+}
+#ind{
+    position: relative;
+    bottom: 10px;
+    right: 20px;
+    
+}
 
+#accounts{
+    width: 200px;
+    position: relative;
+    top: 5px;
+    left: 20px;
+    
 }
-.icon{
-    width: 20px !important;
-    height: 20px !important;
+#cart{ width: 30px;
+    margin-left: 40px;
+    position: relative;
+    bottom: 5px;
 }
-.page{
-    display: inline-flexbox;
-    justify-content: space-evenly;
-    justify-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 300px;
-  
+/* Background */
+#back{
+    background-image: url("https://github.com/Max3796/amazon-clone-boilerplate/blob/main/assets/background%20picture.png?raw=true");
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;    
 }
-.page > .block1 > img{
-    margin-left: 5px;
-    display:flexbox;
-    width: 210px;
+/* Menu */
+#menu{
+    margin: 0;
+    background-color: #243040;
 }
-.page > .block3 > img{
-    height: 300px;
-    margin-top: 10px;
-    width: 440px;
+#ham{
+    width: 15px;
+    height: 15px;
+    margin-top: 13px;
+    margin-left: 20px;
 }
-.page > .block2 > img{
+h4{
+    color: white;
+    margin: 7px;
+    font-size: 13px;
+    margin-top: 13px;
+    
+}
+.text{
+    display: flex;
+    
+}
+#lion{
+    margin-left: 150px;
+}
+#prime{
+    height: 35px;
     padding-top: 5px;
 }
-.block1{
-    display: inline-block;
-    height: 500px;
-    width: 455px;
-    background-color: white;
- 
-    margin-left: 25px;
-    flex-grow: 1;
+/* Arrow */
+#arrow{
+    position: absolute;
+    top: 230px;
+    left: 1200px;
+}
+/* Parent Div */
+#Items{
+    display: flex;
     
 }
-.block2{
-    display: inline-block;
-    position: relative;
-    height: 500px;
-    width: 455px;
-    background-color: white;
-   
-    margin-left: 25px;
-    flex-grow: 1;
-}
-.block3{
-    display: inline-block;
-    position: relative;
-    height: 500px;
-    width: 455px;
-    background-color: white;
-   
-    margin-left: 25px;
-    flex-grow: 1;
-
-}
-.block4{
-    display: inline-block;
+/* Child-1 */
+#Item1{
+    width: 250px;
+    height: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
     position: absolute;
-    height: 200px;
-    width: 375px;
-    background-color: white;
-    margin-left: 25px;
-    flex-grow: 1;
-
+    bottom: -50px;
+    left: 40px;
+    background-color: #FFFCFC;
+    border-radius: 2px;
+    
 }
-.block4 button {
-    margin-top: 30px;
-    width: 350px;
-    margin-left: 10px;
-    height: 50px;
-    background-color: rgb(255, 201, 100);
-    border-radius: 20px;
+/* Child-2 */
+#Item2{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 320px;
+    position: absolute;
+    bottom: -50px;
+    left: 360px;
+    background-color: #FFF3F3;
+    border-radius: 2px;
+}
+/* Child-3 */
+#Item3{
+    padding-left: 10px;
+    padding-right: 5px;
+    height: 320px;
+    position: absolute;
+    bottom: -50px;
+    left: 680px;
+    background-color: #FFF6F6;
+    border-radius: 2px;
+}
+/* Child-4 */
+#Item4{
+    padding: 10px;
+    padding-left: 30px;
+    height: 100px;
+    position: absolute;
+    bottom: 150px;
+    left: 1000px;
+    background-color: #FFFBFB;
+    border-radius: 2px;
+}
+/* Child-5 */
+#Item5{
+    padding: 0px;
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    bottom: 9px;
+    left: 1030px;
+    background-color: white;
+    
+}
+#img1{
+    width: 230px;
+}
+#img2{
+    width: 250px;
+}
+#img3{
+    width: 250px;
+    position: relative;
+    bottom: 10px;
+}
+#img4{
+    width: 250px;
+    border-radius: 2px;
+}
+/* Sign-in Button */
+#sign-in{
+    width: 230px;
+    margin: 0 30px 0 10px;
+    background-color: #FED813;
+    height: 30px;
+    border-radius: 10px;
     border: none;
+    
 }
-.block5 {
-    display: inline-block;
-    position: absolute;
-    height: 200px;
-    width: 375px;
-    margin-top:225px     ;
-    margin-left: 25px;
-    flex-grow: 1;
-
+/* Hover  */
+#amazon:hover{
+    cursor: pointer;
 }
-
-
+#sign-in:hover{
+    cursor: pointer;
+}
+h4:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#arrow:hover{
+    cursor: pointer;
+}
+#prime:hover{
+    cursor: pointer;
+}
+#ham:hover{
+    cursor: pointer;
+}
+#cart:hover{
+    cursor: pointer;
+}
+#accounts:hover{
+    cursor: pointer;
+}
+#ind:hover{
+    cursor: pointer;
+}
+#button:hover{
+    cursor: pointer;
+}
