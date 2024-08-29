@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-    background-image: url("");
+    background-image: url("background\ picture.png");
     
     background-size: cover;
     overflow-y: hidden;
